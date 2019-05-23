@@ -2,12 +2,107 @@
   margin: 0;
   padding: 0; }
 
-li, a {
+li,
+a {
   list-style: none;
   text-decoration: none; }
+  li:hover,
+  a:hover {
+    text-decoration: none; }
 
 .header {
   background-color: #222; }
-  .header .nav__list {
+  .header .header__nav {
     display: flex;
-    flex-direction: row; }
+    justify-content: space-between;
+    align-items: center; }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; }
+
+.nav__item {
+  padding: 15px 10px;
+  position: relative; }
+  .nav__item > a {
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .nav__item > a i {
+      margin-left: 5px;
+      vertical-align: middle; }
+  .nav__item:hover .sub__menu {
+    visibility: inherit;
+    transform: rotateX(0deg);
+    opacity: 1; }
+  .nav__item:hover .border__top_submenu {
+    width: 100%; }
+
+.nav_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; }
+  .nav_social li {
+    padding: 15px 13px; }
+    .nav_social li > a {
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+.sub__menu {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: 0px 3px 3px rgba(190, 190, 190, 0.6);
+  transform: rotateX(-90deg);
+  opacity: 0;
+  transition: 0.5s all ease-in-out; }
+
+.sub__menu-item {
+  padding: 8px;
+  transition: 0.2s all ease-in; }
+  .sub__menu-item a {
+    color: #333;
+    font-size: 11px;
+    font-weight: bold; }
+  .sub__menu-item:hover {
+    background-color: tomato; }
+
+.border__top_submenu {
+  width: 0;
+  position: absolute;
+  top: 0;
+  background-color: #bebebe;
+  left: 0;
+  height: 4px;
+  transition: 1s all ease-in-out; }
+
+.nav__mega-menu-wrapper {
+  position: static; }
+
+.nav__mega-menu {
+  width: 100%; }
+
+.list__item {
+  padding: 8px 10px;
+  transition: 0.2s all ease-in; }
+  .list__item > a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px; }
+  .list__item:hover {
+    background-color: tomato; }
