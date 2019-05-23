@@ -6,6 +6,10 @@ li,a{
   list-style: none;
   text-decoration: none;
 }
-body{
-  color: #333333;
+.header{
+  background-color: #222;
+  .nav__list{
+    display: flex;
+   flex-direction: row;
+  }
 }

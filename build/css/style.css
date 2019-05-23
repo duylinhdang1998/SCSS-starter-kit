@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li, a {
+  list-style: none;
+  text-decoration: none; }
+
+.header {
+  background-color: #222; }
+  .header .nav__list {
+    display: flex;
+    flex-direction: row; }
