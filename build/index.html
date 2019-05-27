@@ -9,10 +9,17 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="import" href="./header.html">
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
 
   <title>Test</title>
 </head>
@@ -27,7 +34,7 @@
             <a href="#">Sliders <i class="fas fa-angle-down"></i></a>
             <ul class="sub__menu nav__mega-menu ">
               <div class="border__top_submenu"></div>
-              <li class="nav__item">
+              <li>
                 <div class="row">
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <ul class="list">
@@ -75,7 +82,7 @@
           </li>
           <li class="nav__item">
             <a href="#">Features<i class="fas fa-angle-down"></i></a>
-            <ul class="sub__menu">
+            <ul class="sub__menu ">
               <div class="border__top_submenu"></div>
               <li class="sub__menu-item"><a href="#">Post Template</a></li>
               <li class="sub__menu-item"><a href="#">Headers</a></li>
@@ -85,8 +92,332 @@
               <li class="sub__menu-item"><a href="#">Pages</a></li>
             </ul>
           </li>
-          <li class="nav__item"><a href="#">Life <i class="fas fa-angle-down"></i></a></li>
-          <li class="nav__item"><a href="#">People <i class="fas fa-angle-down"></i></a></li>
+          <li class="nav__item  nav__mega-menu-wrapper nav__menu__post">
+            <a href="#">Life <i class="fas fa-angle-down"></i></a>
+            <ul class="sub__menu nav__list__post">
+              <div class="border__top_submenu"></div>
+              <li style="width: 100%;">
+                <div class="tab">
+                  <div class="wrapper-tab">
+                    <ul class="tab__nav">
+                      <li class="tab__nav__item" data-id="tab__nav-1"><a href="#item1">LandScape</a>
+                      </li>
+                      <li class="tab__nav__item" data-id="tab__nav-2"><a href="#item2">People</a></li>
+                      <li class="tab__nav__item" data-id="tab__nav-3"><a href="#item3">Still</a></li>
+                      <li class="tab__nav__item" data-id="tab__nav-4"><a href="#item4">All</a></li>
+                    </ul>
+                    <div class="tab__content">
+
+                      <!-- tab panel 1 -->
+                      <div class="tab__panel hover__active" id="tab__nav-1">
+                        <div class="row__post">
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/amy-humphries-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/amy-humphries-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/amy-humphries-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/amy-humphries-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <!-- end tab panel 1 -->
+
+                      <!-- tab panel 2 -->
+                      <div class="tab__panel " id="tab__nav-2">
+                        <div class="row__post">
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/chris-holgersson-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/chris-holgersson-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/chris-holgersson-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/chris-holgersson-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- end tab panel 2 -->
+
+                      <!-- tab panel 3 -->
+                      <div class="tab__panel" id="tab__nav-3">
+                        <div class="row__post">
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--  end tab panel 3 -->
+
+                      <!-- tab panel 4 -->
+                      <div class="tab__panel" id="tab__nav-4">
+                        <div class="row__post">
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="column__post">
+                            <div class="post">
+                              <div class="post__wrapper--image">
+                                <a class="post__image"
+                                  style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-585x390.jpg)">
+                                </a>
+                              </div>
+                              <div class="post__content">
+                                <a class="post__content--text" href="#">The beauty of people</a>
+                                <p class="post__content--date">July 9, 2017</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item  nav__mega-menu-wrapper">
+            <a href="#">People <i class="fas fa-angle-down"></i></a>
+            <ul class="sub__menu nav__list__post">
+              <div class="border__top_submenu"></div>
+              <li class="list__post-item">
+                <div class="post">
+                  <div class="post__wrapper--image">
+                    <a class="post__image">
+                    </a>
+                  </div>
+                  <div class="post__content">
+                    <a class="post__content--text" href="#">The beauty of people</a>
+                    <p class="post__content--date">July 9, 2017</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list__post-item">
+                <div class="post">
+                  <div class="post__wrapper--image">
+                    <a class="post__image">
+                    </a>
+                  </div>
+                  <div class="post__content">
+                    <a class="post__content--text" href="#">The beauty of people</a>
+                    <p class="post__content--date">July 9, 2017</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list__post-item">
+                <div class="post">
+                  <div class="post__wrapper--image">
+                    <a class="post__image">
+                    </a>
+                  </div>
+                  <div class="post__content">
+                    <a class="post__content--text" href="#">The beauty of people</a>
+                    <p class="post__content--date">July 9, 2017</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list__post-item">
+                <div class="post">
+                  <div class="post__wrapper--image">
+                    <a class="post__image">
+                    </a>
+                  </div>
+                  <div class="post__content">
+                    <a class="post__content--text" href="#">The beauty of people</a>
+                    <p class="post__content--date">July 9, 2017</p>
+                  </div>
+                </div>
+              </li>
+              <li class="list__post-item">
+                <div class="post">
+                  <div class="post__wrapper--image">
+                    <a class="post__image">
+                    </a>
+                  </div>
+                  <div class="post__content">
+                    <a class="post__content--text" href="#">The beauty of people</a>
+                    <p class="post__content--date">July 9, 2017</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </li>
           <li class="nav__item"><a href="#">Portfolio <i class="fas fa-angle-down"></i></a></li>
           <li class="nav__item"><a href="#">Shop<i class="fas fa-angle-down"></i></a></li>
         </ul>
@@ -101,11 +432,140 @@
 
   </header>
 
+  <div class="main">
+    <div class="main__title">
+      <h1>Photographie</h1>
+      <p class="sub__title">For photographer love blogging</p>
+    </div>
+    <div class="slider swiper-container">
+      <div class="slider__item swiper-wrapper">
+        <div class="item swiper-slide">
+          <a href="#" class="image__slider"
+            style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured1-1920x800.jpg)"></a>
+          <div class="overlay__image-slider">
+            <div class="featured__content">
+              <div class="featured__text">
+                <div class="featured__category">
+                  <a href="#" class="category__link shape">Featured</a>
+                  <a href="#" class="category__link">Still</a>
+                </div>
+                <h3><a href="#">Looking for the light</a></h3>
+                <div class="meta__text">
+                  <span class="time">July 9, 2017</span>
+                  <span class="number__comments">3 comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item swiper-slide">
+          <a href="#" class="image__slider"
+            style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/featured2-1920x800.jpg)"></a>
+          <div class="overlay__image-slider">
+            <div class="featured__content">
+              <div class="featured__text">
+                <div class="featured__category">
+                  <a href="#" class="category__link shape">Featured</a>
+                  <a href="#" class="category__link">Still</a>
+                </div>
+                <h3><a href="#">Looking for the light</a></h3>
+                <div class="meta__text">
+                  <span class="time">July 9, 2017</span>
+                  <span class="number__comments">3 comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item swiper-slide">
+          <a href="#" class="image__slider"
+            style="background-image: url(http://max.soledad.pencidesign.com/soledad-photography-blog/wp-content/uploads/sites/30/2017/07/ocean-1920x800.jpg)"></a>
+          <div class="overlay__image-slider">
+            <div class="featured__content">
+              <div class="featured__text">
+                <div class="featured__category">
+                  <a href="#" class="category__link shape">Featured</a>
+                  <a href="#" class="category__link">Still</a>
+                </div>
+                <h3><a href="#">Looking for the light</a></h3>
+                <div class="meta__text">
+                  <span class="time">July 9, 2017</span>
+                  <span class="number__comments">3 comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Add pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
 
-
-
-
+  <script type="text/javascript">
+    const Event = {
+      events: {},
+      emit: function (type, data) {
+        if (this.events[type]) {
+          this.events[type].forEach(({ listener }) => {
+            listener(data)
+          })
+        }
+      },
+      on: function (type, listener) {
+        this.events = {
+          ...this.events,
+          [type]: [
+            ...(this.events[type] || []),
+            {
+              listener
+            }
+          ]
+        }
+      }
+    }
+    function Tab(options) {
+      const { element, event } = options;
+      const $tab = [...document.querySelectorAll(element)];
+      $tab.forEach($links => {
+        $links.addEventListener(event, (e) => {
+          Event.emit("onchangetab", e);
+        })
+      })
+    }
+    Event.on("onchangetab", (e) => {
+      const { currentTarget } = e;
+      const id = currentTarget.getAttribute("data-id");
+      const $currentItem = document.querySelector(`#${id}`);
+      const $tabPanel = document.querySelector(".tab__panel.hover__active");
+      $tabPanel.classList.remove("hover__active");
+      $currentItem.classList.add("hover__active");
+    })
+    Tab({ element: ".tab__nav__item", event: "mouseenter" });
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay:{
+        delay: 5000
+      },
+      effect:"fade",
+      fadeEffect :{
+        crossFade: true
+      },
+      loop:true
+    });
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
