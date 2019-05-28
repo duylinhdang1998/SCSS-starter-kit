@@ -27,17 +27,21 @@ function _watch() {
     html();
     browserSync.reload();
   });
+  watch("app/js/*.js").on("change", function(path, stats) {
+    js();
+    browserSync.reload();
+  });
 }
 
-// function js() {
-//   return src("client/javascript/*.js", { sourcemaps: true })
-//     .pipe(concat("app.min.js"))
-//     .pipe(dest("build/js", { sourcemaps: true }));`
-// }
+function js() {
+  return src("app/js/*.js", { sourcemaps: true }).pipe(
+    dest("build/js", { sourcemaps: true })
+  );
+}
 
-// exports.js = js;
+exports.js = js;
 exports._watch = series(_watch);
 exports.css = css;
 exports.serve = serve;
 exports.html = html;
-exports.default = parallel(serve, html, css, _watch);
+exports.default = parallel(serve, html, css, _watch, js);
